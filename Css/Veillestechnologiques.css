@@ -50,15 +50,15 @@
     align-items: flex-start;
 }
 
-.service-info p {
+.service-info h2 {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: #555;
 }
 
-.service-info h2 {
+.service-info p {
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 14px;
     color: #333;
 }
 
@@ -79,6 +79,28 @@
     background-color: transparent;
     color: black;
 }
+
+.show-more-btn {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.show-more-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
 
 
 @media (max-width: 1000px) {
