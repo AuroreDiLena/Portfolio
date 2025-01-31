@@ -1,3 +1,8 @@
+#VeillesTechnologiques{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 #VeillesTechnologiques h2 {
     text-align: center;
     padding: 20px;
@@ -10,7 +15,6 @@
     gap: 20px;
     max-width: 80vw;
     margin: auto;
-    margin-bottom: 50px;
 }
 
 .service-card {
