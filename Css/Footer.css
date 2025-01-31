@@ -1,0 +1,134 @@
+footer {
+    background-color: white;
+    color: #000;
+    padding: 40px 50px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+    margin: 0 auto;
+}
+
+.footer-navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permet d'aller sur plusieurs lignes si nécessaire */
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-navbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all ease-in-out 0.3s;
+}
+
+.footer-navbar a:hover {
+    color: lightgray;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    text-align: center;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-column h4 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+    color: lightgray;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: 000;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: lightgray;
+}
+
+.footer-bottom {
+    border-top: 1px solid #000;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.footer-bottom a{
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom a:hover{
+    color: lightgray;
+}
+
+/* Media queries pour petits écrans */
+@media (max-width: 1000px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex: unset;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer-bottom {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-navbar {
+        gap: 10px;
+    }
+
+    .footer-navbar a {
+        font-size: 14px;
+    }
+}

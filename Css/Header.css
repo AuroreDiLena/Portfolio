@@ -1,0 +1,136 @@
+/* Styles de base */
+header {
+    height: 15vh;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header .container h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: black;
+}
+header .container h1::after {
+    background-color: transparent;
+    height: 0px;
+}
+
+header .container nav {
+    position: relative;
+}
+
+header .container nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    border-top: 1px solid gray;
+    margin: 0;
+    padding: 0;
+}
+
+header .container nav ul li {
+    border-top: 3px transparent solid;
+    padding: 10px;
+    transition: all ease-in-out 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .container nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+header .container nav ul li:hover {
+    border-top: 3px lightgray solid;
+}
+
+header .container nav ul li:active {
+    border-top: 3px gray solid;
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-icon span {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#nav-links {
+    display: flex; 
+}
+
+#nav-links.active {
+    display: block;
+    position: fixed;
+    top: 7.5vh;
+    right: 0; 
+    width: 25%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px;
+}
+
+#nav-links li {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+}
+
+#nav-links li a {
+    font-size: 16px;
+    color: black;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 1000px) {
+    header{
+        height: 7.5vh;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+    }
+
+    header .container h1 {
+        font-size: 40px;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    #nav-links {
+        display: none;
+    }
+}

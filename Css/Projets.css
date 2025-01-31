@@ -1,0 +1,62 @@
+#Projets {
+  margin-top: 50px; ;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.technologies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.technology-item {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.technology-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
+}
+
+.technology-item:hover img{
+  transform: scale(1.1);
+}
+
+.tech-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.technology-item img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 20px;
+  object-fit: contain;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.technology-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.technology-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.technology-item .date {
+  margin-bottom: 10px;
+}
