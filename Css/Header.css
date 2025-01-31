@@ -109,6 +109,12 @@ header .container nav ul li:active {
     white-space: nowrap;
 }
 
+@media (max-width: 1200px){
+    header .container h1 {
+        font-size: 25px;
+    }
+}
+
 /* Media query pour les petits écrans */
 @media (max-width: 1000px) {
     header{
@@ -120,10 +126,6 @@ header .container nav ul li:active {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
-    }
-
-    header .container h1 {
-        font-size: 40px;
     }
 
     .burger-icon {
