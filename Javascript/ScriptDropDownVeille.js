@@ -50,12 +50,19 @@ const services = [
 ];
 
 let currentIndex = 0;
+let allCardsVisible = false;
 
 function generateCards() {
     const serviceContainer = document.getElementById('service-container');
     const showMoreBtn = document.getElementById('show-more-btn');
     
-    for (let i = 0; i < 4; i++) {         
+    // Clear the current cards in the container before generating new ones
+    serviceContainer.innerHTML = '';
+    
+    // Calculate the number of cards to show based on the state of 'allCardsVisible'
+    const cardsToShow = allCardsVisible ? services.length : 4;
+    
+    for (let i = 0; i < cardsToShow; i++) {
         const service = services[currentIndex];
         
         const card = document.createElement('div');
@@ -72,17 +79,22 @@ function generateCards() {
         
         serviceContainer.appendChild(card);
         
-        currentIndex++; 
-        if (currentIndex >= services.length) {
-            // Si toutes les cartes sont générées, on cache le bouton
-            showMoreBtn.style.display = 'none';
-            return;
-        }
+        currentIndex++;
+    }
+    
+    // Update the button text based on whether all cards are shown
+    if (allCardsVisible) {
+        showMoreBtn.textContent = 'Voir moins';
+    } else {
+        showMoreBtn.textContent = 'Voir plus';
     }
 }
 
 generateCards();
 
 document.getElementById('show-more-btn').addEventListener('click', function() {
-    generateCards(); 
+    // Toggle the 'allCardsVisible' state
+    allCardsVisible = !allCardsVisible;
+    currentIndex = 0; // Reset the index to start from the beginning
+    generateCards();
 });
