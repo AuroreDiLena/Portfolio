@@ -19,7 +19,7 @@ const services = [
     },
     {
         title: "Service 4",
-        description: "Service 4 avec des fonctionnalités avancées pour...",
+        description: "Service 4 avec des fonctionnalités avancées poour...",
         img: "Images/fe.png",
         link: "#"
     },
