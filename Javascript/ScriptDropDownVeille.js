@@ -73,7 +73,7 @@ function generateCards() {
             <div class="service-info">
                 <h2>${service.title}</h2>
                 <p>${service.description}</p>
-                <a href="${service.link}">Lire</a>
+                <a href="${service.link}">En savoir plus</a>
             </div>
         `;
         

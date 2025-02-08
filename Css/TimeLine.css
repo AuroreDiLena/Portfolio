@@ -83,16 +83,18 @@
   .timeline-description p{
     font-size: 0.9rem;
     line-height: 1.5;
-  }
+}
 
 
-  .description-content {
+  /*.description-content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+  /*
 }
 
+/*
 .description-content.active {
     max-height: 500px;
     opacity: 1;
@@ -142,4 +144,4 @@
       font-size: 0.7rem;
     }
 }
-  
+*/

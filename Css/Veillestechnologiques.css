@@ -63,14 +63,15 @@
 }
 
 .service-info a {
+    font-size: 14px;
     display: block;
     background-color: black;
     border: 1px solid black;
     border-radius: 5px;
     color: white;
-    width: 100px;
+    width: 120px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 8px 20px;
     text-decoration: none;
     transition: all ease-in-out 0.3s;
 }

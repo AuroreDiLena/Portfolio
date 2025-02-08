@@ -13,6 +13,16 @@
   margin: auto;
 }
 
+.technology-item-link {
+  display: block; /* Faire en sorte que l'élément <a> occupe tout le bloc */
+  text-decoration: none; 
+  color: inherit; /* Garder la couleur par défaut */
+}
+
+.technology-item-link:hover {
+  text-decoration: underline;
+}
+
 .technology-item {
   background-color: #fff;
   padding: 20px;
@@ -55,6 +65,7 @@
 .technology-item p {
   font-size: 1rem;
   color: #666;
+  cursor: pointer;
 }
 
 .technology-item .date {

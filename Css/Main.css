@@ -38,6 +38,8 @@ h1::after {
 .button{
     text-decoration: none;
     border-radius: 5px;
+    font-size: 14px; 
+    height: 15px;
 }
 
 @media (max-width: 1000px){
