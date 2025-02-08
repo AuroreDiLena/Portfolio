@@ -37,7 +37,6 @@ h1::after {
 
 .button{
     text-decoration: none;
-    border-radius: 5px;
 }
 
 @media (max-width: 1000px){
