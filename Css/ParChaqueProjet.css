@@ -1,0 +1,70 @@
+
+#UnProjet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+body .unProjet_container{
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body .unProjet_container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+body .unProjet_container p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/*
+body .unProjet_container ul {
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style-type: disc;
+}
+
+body .unProjet_container ul li {
+    margin-bottom: 10px;
+}
+
+
+body .unProjet_container .button {
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 100px;
+    text-align: center;
+    padding: 12px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+body .unProjet_container .button:hover {
+    background-color: white;
+    color: black;
+}
+*/
+
+
+
+
+
+
+
+
+
+.details {
+    display: none;
+}
+
