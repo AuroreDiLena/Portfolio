@@ -19,8 +19,14 @@
   color: inherit; /* Garder la couleur par défaut */
 }
 
-.technology-item-link:hover {
+.technology-item-link h3{
   text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.technology-item-link:hover h3{
+  text-decoration-color: #000;
 }
 
 .technology-item {
