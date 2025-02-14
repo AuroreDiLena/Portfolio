@@ -25,6 +25,24 @@ body .unProjet_container p {
     line-height: 1.5;
     margin-bottom: 10px;
 }
+
+body .unProjet_container .button {
+    display: block;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 9px 40px 15px;
+    margin: auto;
+    transition: all ease-in-out 0.3s;
+}
+
+body .unProjet_container .button:hover {
+    background-color: white;
+    color: black;
+}
+
 /*
 body .unProjet_container ul {
     margin-left: 10px;
@@ -37,32 +55,11 @@ body .unProjet_container ul li {
 }
 
 
-body .unProjet_container .button {
-    display: block;
-    background-color: black;
-    border: 1px solid black;
-    color: white;
-    width: 100px;
-    text-align: center;
-    padding: 12px 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    transition: all ease-in-out 0.3s;
-}
-
 body .unProjet_container .button:hover {
     background-color: white;
     color: black;
 }
 */
-
-
-
-
-
-
-
-
 
 .details {
     display: none;
