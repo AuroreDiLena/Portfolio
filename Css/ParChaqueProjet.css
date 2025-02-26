@@ -41,14 +41,6 @@ body .unProjet_container .button:hover {
     color: black;
 }
 
-.container-projets {
-  display: flex;
-  flex-wrap: wrap;                /* Permet aux éléments de se déplacer à la ligne suivante si nécessaire */
-  justify-content: space-between;  /* Également possible : space-evenly, ou space-around, selon votre besoin */
-  gap: 20px;                       /* Espace de 20px entre les cartes */
-  margin: auto;                    /* Centrer le conteneur */
-}
-
 /*
 body .unProjet_container ul {
     margin-left: 10px;
@@ -114,7 +106,16 @@ body .unProjet_container ul li {
 }
 
 .bdd {
-    width: 150%;
+    width: 100%;
+}
+
+.container-projets {
+    display: flex;
+    flex-wrap: wrap;               /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: flex-start;   /* Aligne les cartes au début de la ligne */
+    gap: 20px;                     /* Espacement entre les cartes */
+    width: 100%;                   /* Le conteneur prend toute la largeur disponible */
+    margin: auto;                  /* Centrer le conteneur */
 }
 
 /* Compétences */
@@ -126,7 +127,7 @@ body .unProjet_container ul li {
     transition: all 0.3s ease-in-out;
     margin: auto;
     position: relative;
-}
+}  
 
 .skill-card:hover {
     transform: translateY(-10px);
@@ -145,6 +146,9 @@ body .unProjet_container ul li {
 
 .skill-card:hover .skill-body {
     background-position: 0 0; /* Déplace la ligne de gauche à droite */
+}
+.skill-card .skill-body p {
+    text-align: center;
 }
 
 .check-icon {
