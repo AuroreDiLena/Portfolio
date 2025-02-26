@@ -71,7 +71,7 @@ body .unProjet_container .button:hover {
     display: flex;
     overflow: clip;
     position: relative;
-    gap: 4.5rem;
+    gap: 5rem;
     width: 100%;
     padding: 2rem;
   }
