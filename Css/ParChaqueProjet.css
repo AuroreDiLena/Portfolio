@@ -67,18 +67,17 @@ body .unProjet_container .button:hover {
 
   
   /*Carousel*/
-  carousel {
+  .carousel {
     display: flex;
     overflow: clip;
     position: relative;
-    gap: 10rem;
+    gap: 4.5rem;
     width: 100%;
-    /*justify-content: center;*/
     padding: 2rem;
   }
   
-  carousel::before,
-  carousel::after {
+  .carousel::before,
+  .carousel::after {
     content: "";
     background: linear-gradient(
       to right,
@@ -91,13 +90,13 @@ body .unProjet_container .button:hover {
     z-index: 2;
   }
   
-  carousel::after {
+  .carousel::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
   }
   
-  carousel::before {
+  .carousel::before {
     left: 0;
     top: 0;
   }
@@ -111,11 +110,11 @@ body .unProjet_container .button:hover {
     }
   }
   
-  carousel .logo {
+  .carousel .logo {
     object-fit: contain;
     min-height: 10rem;
     max-height: 10rem;
     max-width: 10rem;
     border-radius: 0rem;
-    animation: scroll 8s linear infinite;
+    animation: scroll 10s linear infinite;
   }
