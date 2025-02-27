@@ -236,8 +236,6 @@ body .unProjet_container ul li {
     background-color: #4c49ea;
   }
   
-  
-  
   @media only screen and (max-width: 979px) {
     .ag-courses_item {
       -ms-flex-preferred-size: calc(50% - 30px);
@@ -267,4 +265,8 @@ body .unProjet_container ul li {
     .ag-courses-item_link {
       padding: 22px 40px;
     }
+  }
+
+  .ag-courses_box .ag-courses_item a {
+    text-decoration: none;
   }
