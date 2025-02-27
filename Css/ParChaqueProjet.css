@@ -117,6 +117,11 @@ body .unProjet_container ul li {
 }
 
 /* Compétences */
+.skill-cards-container {
+    display : flex;
+    flex-direction : column;
+}
+
 .skill-card {
     width: 35%;
     background-color: #fff;
@@ -145,6 +150,7 @@ body .unProjet_container ul li {
 .skill-card:hover .skill-body {
     background-position: 0 0; /* Déplace la ligne de gauche à droite */
 }
+
 .skill-card .skill-body p {
     text-align: center;
 }
