@@ -100,10 +100,6 @@ body .unProjet_container ul li {
     animation: scroll 17s linear infinite;
 }
 
-.bdd {
-    width: 100%;
-}
-
 .container-projets {
     display: flex;
     flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
@@ -277,4 +273,35 @@ body .unProjet_container ul li {
     text-decoration: none;
   }
 
+.bdd {
+  width: 100%;
+}
 
+
+/* Maquettes d'applications */
+
+
+
+/* Gallery */
+.gallery {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Ajoute un espacement entre les éléments */
+}
+
+.gallery ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery ul li {
+  width: calc(50% - 10%); /* Assure-toi que la largeur est correcte avec les marges */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin: 1% 5%;
+}
