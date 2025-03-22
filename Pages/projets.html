@@ -78,7 +78,6 @@
 
               <div class="container-projets">
                 <h3>Technologies utilisées</h3>
-            
                 <div class="carousel">
                     <img class="logo" src="../Images/Html.png" alt="Html">
                     <img class="logo" src="../Images/Css.png" alt="Css">
@@ -139,34 +138,46 @@
 
               <div class="container-projets">
                 <h3>Base de données</h3>
-                  <img class="bdd" src="../Images/bdd-sio1-p2.png" alt="Base de données">
+                  <img class="bdd" src="../Images/bdd-sio1-p2.png" alt="Base de données" >
               </div>
 
               <div class="container-projets">
                 <h3>Aperçu de l'interface</h3>    
-
                 <section class="gallery">
                   <ul>
                     <li>
-                      <img src="../Images/screen-stage1/accueil.png" alt="Accueil camping">
+                      <a href="#" class="image-link" data-description="Description de l'image 1">
+                        <img src="../Images/screen-stage1/accueil.png" alt="Accueil camping">
+                      </a>
                     </li>
                     <li>
-                      <img src="../Images/screen-stage1/mobilhome.png" alt="Mobilhome camping">
+                      <a href="#" class="image-link" data-description="Description de l'image 2">
+                        <img src="../Images/screen-stage1/mobilhome.png" alt="Mobilhome camping">
+                      </a>
                     </li>
                     <li>
-                      <img src="../Images/screen-stage1/reservation.png" alt="Réservation camping">
+                      <a href="#" class="image-link" data-description="Description de l'image 3">
+                        <img src="../Images/screen-stage1/reservation.png" alt="Réservation camping">
+                      </a>
                     </li>
                     <li>
-                      <img src="../Images/screen-stage1/formulaire.png" alt="Formulaire de contact camping">
+                      <a href="#" class="image-link" data-description="Description de l'image 4">
+                        <img src="../Images/screen-stage1/formulaire.png" alt="Formulaire de contact camping">
+                      </a>
                     </li>
-                  <!-- qd on clique paf ca affiche en grand avec description à la livio-->
                   </ul>
                 </section>
+                
+                <!-- Fenêtre modale -->
+                <div id="imageModal" class="modal">
+                  <span class="close" id="closeModal">&times;</span>
+                  <img id="modalImage" class="modal-content" src="" alt="">
+                  <div id="modalDescription" class="description"></div>
+                </div>
               </div>
 
               <div class="container-projets">
                 <h3>Compétences acquises</h3>
-
                 <div class="skill-cards-container">
                   <div class="skill-card">
                       <div class="check-icon"><img src="../Images/check.png" alt="checked"></div>
