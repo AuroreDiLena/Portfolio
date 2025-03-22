@@ -3,23 +3,32 @@ const modal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
 const modalDescription = document.getElementById('modalDescription');
 const closeModal = document.getElementById('closeModal');
+const prevImage = document.getElementById('prevImage');
+const nextImage = document.getElementById('nextImage');
 
-// Ajoute un gestionnaire d'événements aux liens des images
-const imageLinks = document.querySelectorAll('.image-link');
-imageLinks.forEach(link => {
-  link.addEventListener('click', function(event) {
-    event.preventDefault(); // Empêche le comportement par défaut (suivi du lien)
+// Récupère tous les éléments <li> pour naviguer entre eux
+const galleryItems = document.querySelectorAll('.gallery ul li');
 
-    // Récupère l'URL de l'image et la description
-    const imageSrc = this.querySelector('img').src;
-    const description = this.getAttribute('data-description');
+// Variables pour savoir quelle image est affichée
+let currentIndex = -1;  // L'index de l'image actuellement affichée
 
-    // Affiche l'image et la description dans la fenêtre modale
-    modalImage.src = imageSrc;
-    modalDescription.textContent = description;
+// Fonction pour ouvrir la modale avec les données d'une image
+function openModal(index) {
+  const imageSrc = galleryItems[index].querySelector('a img').src;
+  const description = galleryItems[index].querySelector('a').getAttribute('data-description');
 
-    // Affiche la fenêtre modale
-    modal.style.display = 'block';
+  modalImage.src = imageSrc;
+  modalDescription.textContent = description;
+
+  currentIndex = index;  // Met à jour l'index de l'image actuelle
+  modal.style.display = 'block';
+}
+
+// Ajouter un gestionnaire d'événements pour ouvrir la modale lors du clic sur un élément <li>
+galleryItems.forEach((item, index) => {
+  item.addEventListener('click', function(event) {
+    event.preventDefault(); // Empêche la propagation du clic
+    openModal(index); // Ouvre la modale avec l'image correspondante
   });
 });
 
@@ -32,5 +41,30 @@ closeModal.addEventListener('click', function() {
 window.addEventListener('click', function(event) {
   if (event.target == modal) {
     modal.style.display = 'none';
+  }
+});
+
+// Fonction pour passer à l'image précédente
+prevImage.addEventListener('click', function() {
+  const prevIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length; // Calcul pour revenir à la dernière image quand on est au début
+  openModal(prevIndex); // Ouvre la modale avec l'image précédente
+});
+
+// Fonction pour passer à l'image suivante
+nextImage.addEventListener('click', function() {
+  const nextIndex = (currentIndex + 1) % galleryItems.length; // Calcul pour revenir à la première image quand on est à la fin
+  openModal(nextIndex); // Ouvre la modale avec l'image suivante
+});
+
+// Fonction pour passer à l'image précédente avec les flèches du clavier
+window.addEventListener('keydown', function(event) {
+  if (modal.style.display === 'block') {  // Vérifier si la modale est ouverte
+    if (event.key === 'ArrowLeft') {  // Flèche gauche
+      const prevIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+      openModal(prevIndex);
+    } else if (event.key === 'ArrowRight') {  // Flèche droite
+      const nextIndex = (currentIndex + 1) % galleryItems.length;
+      openModal(nextIndex);
+    }
   }
 });

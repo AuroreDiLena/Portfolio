@@ -324,13 +324,13 @@ body .unProjet_container .button:hover {
 .modal {
   display: none; /* Cacher la modale par défaut */
   position: fixed;
-  z-index: 1; /* Au-dessus du contenu */
+  z-index: 99999; /* Au-dessus du contenu */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto; /* Si l'image est trop grande */
-  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.9); /* Fond semi-transparent */
   padding-top: 60px;
 }
 
@@ -357,12 +357,37 @@ body .unProjet_container .button:hover {
   color: white;
   font-size: 40px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #ff0000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Flèches de navigation */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+#prevImage {
+  left: 10px;
+}
+
+#nextImage {
+  right: 10px;
+}
+
+.nav-arrow:hover {
+  color: #ff0000;
 }
