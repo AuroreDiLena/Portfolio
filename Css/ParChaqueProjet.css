@@ -98,7 +98,7 @@ body .unProjet_container .button:hover {
   max-height: 10rem;
   max-width: 10rem;
   border-radius: 0rem;
-  animation: scroll 17s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 
@@ -145,10 +145,10 @@ body .unProjet_container .button:hover {
   }
   .ag-courses-item_title {
     min-height: 87px;
-    margin: 0 0 25px;
+    margin: 0 0 0;
     overflow: hidden;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.35em;
     color: #000;
     z-index: 2;
     position: relative;
