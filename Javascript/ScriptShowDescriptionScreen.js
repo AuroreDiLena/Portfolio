@@ -44,27 +44,27 @@ window.addEventListener('click', function(event) {
   }
 });
 
-// Fonction pour passer à l'image précédente
-prevImage.addEventListener('click', function() {
-  const prevIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length; // Calcul pour revenir à la dernière image quand on est au début
-  openModal(prevIndex); // Ouvre la modale avec l'image précédente
-});
+// // Fonction pour passer à l'image précédente
+// prevImage.addEventListener('click', function() {
+//   const prevIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length; // Calcul pour revenir à la dernière image quand on est au début
+//   openModal(prevIndex); // Ouvre la modale avec l'image précédente
+// });
 
-// Fonction pour passer à l'image suivante
-nextImage.addEventListener('click', function() {
-  const nextIndex = (currentIndex + 1) % galleryItems.length; // Calcul pour revenir à la première image quand on est à la fin
-  openModal(nextIndex); // Ouvre la modale avec l'image suivante
-});
+// // Fonction pour passer à l'image suivante
+// nextImage.addEventListener('click', function() {
+//   const nextIndex = (currentIndex + 1) % galleryItems.length; // Calcul pour revenir à la première image quand on est à la fin
+//   openModal(nextIndex); // Ouvre la modale avec l'image suivante
+// });
 
-// Fonction pour passer à l'image précédente avec les flèches du clavier
-window.addEventListener('keydown', function(event) {
-  if (modal.style.display === 'block') {  // Vérifier si la modale est ouverte
-    if (event.key === 'ArrowLeft') {  // Flèche gauche
-      const prevIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-      openModal(prevIndex);
-    } else if (event.key === 'ArrowRight') {  // Flèche droite
-      const nextIndex = (currentIndex + 1) % galleryItems.length;
-      openModal(nextIndex);
-    }
-  }
-});
+// // Fonction pour passer à l'image précédente avec les flèches du clavier
+// window.addEventListener('keydown', function(event) {
+//   if (modal.style.display === 'block') {  // Vérifier si la modale est ouverte
+//     if (event.key === 'ArrowLeft') {  // Flèche gauche
+//       const prevIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+//       openModal(prevIndex);
+//     } else if (event.key === 'ArrowRight') {  // Flèche droite
+//       const nextIndex = (currentIndex + 1) % galleryItems.length;
+//       openModal(nextIndex);
+//     }
+//   }
+// });
