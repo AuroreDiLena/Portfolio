@@ -368,7 +368,7 @@ body .unProjet_container .button:hover {
 }
 
 /* Flèches de navigation */
-/* .nav-arrow {
+.nav-arrow {
   position: absolute;
   top: 50%;
   font-size: 40px;
@@ -389,6 +389,6 @@ body .unProjet_container .button:hover {
 }
 
 .nav-arrow:hover {
-  color: #ff0000;
+  color: rgba(255, 255, 255, 0.6);
 } 
-*/ 
+
