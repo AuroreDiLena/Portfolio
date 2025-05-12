@@ -73,6 +73,7 @@
     width: 120px;
     text-align: center;
     padding: 8px 20px;
+    margin-bottom: 10%;
     text-decoration: none;
     transition: all ease-in-out 0.3s;
 }
