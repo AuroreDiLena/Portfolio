@@ -6,7 +6,35 @@
 #VeillesTechnologiques h2 {
     text-align: center;
     padding: 20px;
+    padding-top: 0;
 }
+
+.veille_container{
+    width: 900px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.veille_container p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.veille_container ul {
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style-type: disc;
+}
+
+.veille_container ul li {
+    margin-bottom: 10px;
+}
+
+.veille_container { 
+
+}
+
 
 .grid-container {
     display: flex;
@@ -23,8 +51,7 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 60vh;
-    height: 20vh;
+    width: 40%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -35,7 +62,7 @@
 
 .service-card img {
     width: 40%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     align-items: center;
     transition: all 0.3s ease-in-out;
@@ -50,17 +77,10 @@
     align-items: flex-start;
 }
 
-.service-info h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #555;
-}
-
 .service-info p {
     margin: 10px 0;
     font-size: 14px;
     color: #333;
-    margin-bottom: 20px;
 }
 
 .service-info a {
@@ -70,10 +90,8 @@
     border: 1px solid black;
     border-radius: 5px;
     color: white;
-    width: 120px;
     text-align: center;
     padding: 8px 20px;
-    margin-bottom: 10%;
     text-decoration: none;
     transition: all ease-in-out 0.3s;
 }
@@ -105,9 +123,3 @@
 }
 
 
-
-@media (max-width: 1000px) {
-    .service-card {
-        height: 8vh;
-    }
-}

@@ -1,49 +1,81 @@
 const services = [
     {
-        title: "Service 1",
-        description: "Description du service 1. Ce service est très utile pour...",
+        description: "Description du service 1. Ce service est très utile pour...Desdedxc eon du service 1. Ce iption du service 1. Ce service est très utile pour du service 1. Ce service esce",
         img: "Images/fe.png",
         link: "#"
     },
     {
-        title: "Service 2",
         description: "Description du service 2. Il offre une solution innovante pour...",
         img: "Images/fe.png",
         link: "#"
     },
     {
-        title: "Service 3",
         description: "Service 3 avec une approche différente. Ce service répond à...",
         img: "Images/fe.png",
         link: "#"
     },
     {
-        title: "Service 4",
         description: "Service 4 avec des fonctionnalités avancées poour...",
         img: "Images/fe.png",
         link: "#"
     },
     {
-        title: "Service 5",
         description: "Service 5 orienté vers l'optimisation des processus...",
         img: "Images/fe.png",
         link: "#"
     },
     {
-        title: "Service 6",
         description: "Service 6 avec des outils modernes et intuitifs...",
         img: "Images/fe.png",
         link: "#"
     },
     {
-        title: "Service 7",
         description: "Service 7 orienté vers l'optimisation des processus...",
         img: "Images/fe.png",
         link: "#"
     },
     {
-        title: "Service 8",
+        description: "Service 7 orienté vers l'optimisation des processus...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
+        description: "Service 7 orienté vers l'optimisation des processus...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
+        description: "Service 7 orienté vers l'optimisation des processus...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
+        description: "Service 7 orienté vers l'optimisation des processus...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
+        description: "Service 7 orienté vers l'optimisation des processus...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
         description: "Service 8 avec des outils modernes et intuitifs...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
+        description: "Service 7 orienté vers l'optimisation des processus...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
+        description: "Service 7 orienté vers l'optimisation des processus...",
+        img: "Images/fe.png",
+        link: "#"
+    },
+    {
+        description: "Service 7 orienté vers l'optimisation des processus...",
         img: "Images/fe.png",
         link: "#"
     }
@@ -71,7 +103,6 @@ function generateCards() {
         card.innerHTML = `
             <img src="${service.img}" alt="Illustration du service">
             <div class="service-info">
-                <h2>${service.title}</h2>
                 <p>${service.description}</p>
                 <a href="${service.link}">En savoir plus</a>
             </div>
