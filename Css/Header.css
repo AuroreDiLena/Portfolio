@@ -82,7 +82,7 @@ header .container nav ul li:active {
     display: flex; 
 }
 
-#nav-links.active {
+/* #nav-links.active {
     display: block;
     position: fixed;
     top: 7.5vh;
@@ -98,7 +98,7 @@ header .container nav ul li:active {
     color: #ff6600;
     font-weight: bold;
     border-bottom: 2px solid #ff6600;
-}
+} */
 
 #nav-links li {
     display: block;
