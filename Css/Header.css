@@ -78,11 +78,11 @@ header .container nav ul li:active {
     border-radius: 5px;
 }
 
-#nav-links {
+.nav-links {
     display: flex; 
 }
 
-#nav-links.active {
+.nav-links.active {
     display: block;
     position: fixed;
     top: 7.5vh;
@@ -94,15 +94,19 @@ header .container nav ul li:active {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     padding: 10px;
+    
+    color: #ff6600;
+    font-weight: bold;
+    border-bottom: 2px solid #ff6600;
 }
 
-#nav-links li {
+.nav-links li {
     display: block;
     width: 100%;
     padding: 15px 0;
 }
 
-#nav-links li a {
+.nav-links li a {
     font-size: 16px;
     color: black;
     padding: 10px 0;
@@ -132,7 +136,7 @@ header .container nav ul li:active {
         display: flex;
     }
 
-    #nav-links {
+    .nav-links {
         display: none;
     }
 }
