@@ -47,3 +47,9 @@ h1::after {
         scroll-margin-top: 7.5vh;
     }
 }
+
+.nav-links.active {
+  color: #ff6600; /* couleur ou effet visuel pour l'actif */
+  font-weight: bold;
+  border-bottom: 2px solid #ff6600;
+}
